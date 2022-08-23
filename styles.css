@@ -1,0 +1,192 @@
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    width: 100%;
+    margin: auto;
+    margin-top: 70px;
+    background-color: #223263;
+    color: white;
+    font-family: Tahoma;
+  }
+
+.square {
+    width: 35px;
+    height: 35px;
+    position: relative;
+   
+    
+
+}
+
+.pokemon {
+    object-fit:cover;
+}
+
+
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    height: 500px;
+    border: 2px solid black;
+    overflow: hidden;
+    background-color: antiquewhite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 5px;
+}
+
+
+
+.character {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: green;
+}
+
+
+
+   .car-left {
+    animation: car-animation-left 1s linear; 
+    position: absolute;
+    object-fit: contain;
+    color: black;
+    font-size: 30px;
+
+} 
+
+    .car-right {
+        position: absolute;
+        object-fit: contain;
+        color: blueviolet;
+        font-size: 30px;
+        animation: car-animation-right 1s linear;
+    }
+
+ .heart {
+    color: red;
+    
+ }
+
+ .life-sec {
+    display:flex;
+    gap: 15px;
+    align-items: center;
+    width: 8.5em;
+    height:1.5em;
+    margin-left: 10%;
+ }
+
+ .heart-icons {
+    display: flex;
+    gap: 4px;
+ }
+
+
+ .h3 {
+    font-family: Tahoma;
+ }
+
+ .heart-crack-icons {
+    display: none;
+ }
+
+ .ghost {
+    color: darkblue;
+    font-size: 35px;
+    transition-property: color;
+    transition-duration: 7.5s;
+ }
+
+ .star {
+   position: absolute;
+    color: yellow;
+    font-size: 35px;
+ }
+
+ .game-over{
+    display: none;
+    width:400px;
+    height: 250px;
+    background-color: rgb(72, 20, 72);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50px;
+    box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
+
+ }
+
+ .game-over h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    
+ }
+
+ .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+
+ }
+
+ .buttons button:hover{
+    background-color: rgb(172, 148, 172);
+ }
+
+ .try-again {
+    padding: 8px;
+    background-color: rgb(216, 175, 216);
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 5px;
+    color: rgb(88, 47, 88);
+ }
+
+ .different-pokemon {
+    padding: 8px;
+    background-color: rgb(216, 175, 216);
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(88, 47, 88);
+    border-radius: 5px;
+ }
+
+
+ @keyframes car-animation-left {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    }
+} 
+
+@keyframes car-animation-right {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 100%;
+    }
+} 
+
+
+  

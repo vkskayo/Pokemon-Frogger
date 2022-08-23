@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose a Pokemon</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <div class="containerImagem">
+      <img src="images/background.png" />
+      <button class="start-button" id="myButton">Start</button>
+      <div class="initial-pokemon" id="initial-pokemon">
+        <div
+          class="pokemon-container bulbasaur-container"
+          id="bulbasaur-container"
+        >
+          <img class="bulbasaur-initial" src="images/frontBulbasaur.png" />
+        </div>
+        <div
+          class="pokemon-container charmander-container"
+          id="charmander-container"
+        >
+          <img class="charmander-initial" src="images/frontCharmander.png" />
+        </div>
+        <div
+          class="pokemon-container squirtle-container"
+          id="squirtle-container"
+        >
+          <img class="squirtle-initial" src="images/frontSquirtle.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+      // location.href = "index.html";
+      document.getElementById("myButton").style.display = "none";
+      document.getElementById("initial-pokemon").style.display = "flex";
+    };
+  </script>
+  <script src="pokemonImage.js"></script>
+</html>
