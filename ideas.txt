@@ -1,0 +1,19 @@
+I am going to simulate the famous retro game : Frogger.
+Since the game is based on pokemon, the stipulated goal will be cross the sea of lapras.
+There will be 4 snorlax at the end of the crossing.
+The player must wake up all of them, so as to win the game. 
+The main function of the lapras in the game will be supporting the chosen pokemon
+ cross the violent sea.
+
+
+ //Controlar a posição dos elementos na disposição bidimensional do jogo.
+
+ Utilizarei as propriedadeds offset para controlar
+  a distancia relativa dos elementos(pokemon e lapras) de um mesmo referencial(a parede à esquerda). 
+  Assumindo que a distância do pokemon desse referencial é x e a distância dos lapras deste mesmo
+  referencial é y, e a largura do pokemon é L1 e a largura da plataforma de lapras é L2. Além disso,
+  assumimos que a distancia do pokemon para o topo do grid é k e a do lapras z.
+  O pokemon se encontra sobre a plataforma, se e somente se x + L1 >= y e x +L1 <= y + L2 e k = z
+
+  //link util
+  https://developer.mozilla.org/pt-BR/docs/Web/API/HTMLElement/offsetLeft

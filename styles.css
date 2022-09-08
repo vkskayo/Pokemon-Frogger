@@ -16,16 +16,18 @@
   }
 
 .square {
-    width: 35px;
-    height: 35px;
-    position: relative;
-   
+    width: 36px;
+    height: 38px;
     
-
+   
 }
 
-.pokemon {
-    object-fit:cover;
+.bulbasaur {
+    
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    
 }
 
 
@@ -38,11 +40,23 @@
     border: 2px solid black;
     overflow: hidden;
     background-color: antiquewhite;
+   
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding-bottom: 5px;
+    
+}
+
+.sea {
+   background-image: url("sprites/sea.png");
+   width: 36.4px;
+   height: 39px;
+   position: relative;
+}
+
+.background-sea {
+   background-image: url("sprites/sea.png");
 }
 
 
@@ -58,8 +72,8 @@
 
 
 
-   .car-left {
-    animation: car-animation-left 1s linear; 
+/*    .car-left {
+    animation: car-animation-left 0.5s linear; 
     position: absolute;
     object-fit: contain;
     color: black;
@@ -72,8 +86,8 @@
         object-fit: contain;
         color: blueviolet;
         font-size: 30px;
-        animation: car-animation-right 1s linear;
-    }
+        animation: car-animation-right 0.5s linear;
+    } */
 
  .heart {
     color: red;
@@ -103,18 +117,6 @@
     display: none;
  }
 
- .ghost {
-    color: darkblue;
-    font-size: 35px;
-    transition-property: color;
-    transition-duration: 7.5s;
- }
-
- .star {
-   position: absolute;
-    color: yellow;
-    font-size: 35px;
- }
 
  .game-over{
     display: none;
@@ -168,9 +170,147 @@
  }
 
 
- @keyframes car-animation-left {
+
+ .snorlax-floor {
+   background-image: url("sprites/sleepySnorlax.png");
+   width: 37.4px;
+   border-radius: 7px;
+ }
+
+ .despertedSnorlax {
+   object-fit: fill;
+   background-image: url("sprites/despertedSnorlax.png");
+   width: 37.39px;
+   border-radius: 7px;
+ }
+
+.support {
+   background-image: url("sprites/support.png");
+
+}
+
+.support-corner {
+   background-image: url("sprites/supportCorner.png");
+   width: 40px;
+}
+
+.sea-top {
+   background-image: url("sprites/sea.png");
+}
+
+.ditto-information {
+   width: 20vw;
+   height: 20vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: 75%;
+   margin-top: 5%;
+}
+
+.ditto {
+   width: 150px;
+   height: 150px;
+}
+
+.bubble {
+   max-width: 100%;
+}
+
+div > .bubble{
+   filter: invert(95%) sepia(0%) saturate(7458%) hue-rotate(75deg) brightness(106%) contrast(102%);
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   -webkit-animation-name: bubble-animation;
+   -webkit-animation-duration: 2s;
+   -webkit-animation-fill-mode: forwards;
+   animation-name: bubble-animation;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+   object-fit: cover;
+}
+
+.arrows {
+   margin-left: 75%;
+   margin-top: 10%;
+}
+
+.arrows img {
+   filter: invert(95%) sepia(0%) saturate(7458%) hue-rotate(75deg) brightness(106%) contrast(102%);
+   width: 155px;
+   height: 100px;
+   object-fit: cover;
+   opacity: 1;
+   transition-property: opacity;
+   transition-duration: 1s;
+   display: none;
+
+}
+
+ @keyframes bubble-animation {
+   100% {
+       height: 100%;
+   }
+   0% {
+       height: 0%;
+   }
+}
+
+@-webkit-keyframes bubble-animation {
+   100% {
+       height: 100%;
+   }
+   0% {
+       height: 0%;
+   }
+}
+
+ .lapras{
+   width: 35px;
+   height: 35px;
+   
+   
+}
+
+.platform {
+   width: 108px;
+   height: 38;
+    animation: car-animation-left 20s linear; 
+   display : flex;
+   position: absolute;
+
+}
+
+.piece {
+   width: 108px;
+   height: 38px;
+   position: relative;
+   display: flex;
+}
+
+
+
+/* .laprasTest{
+   width: 35px;
+   height: 35px;
+   position: absolute;
+   animation: car-animation-left 20s linear
+   
+   
+} */
+
+.ocean {
+   width: 100%;
+   height:39px;
+   display: flex;
+}
+
+   @keyframes car-animation-left {
     from {
-        left: 0;
+        left: -100px;
     }
 
     to {
@@ -186,7 +326,9 @@
     to {
         right: 100%;
     }
-} 
+}  
+ 
+
 
 
   
